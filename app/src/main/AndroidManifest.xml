@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoMobileAdminiscar">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".ActivityTelaLogin"
+            android:label="Login" />
+        <activity
+            android:name=".ActivityTelaSplash"
+            android:label="Adminiscar-Ecommerce versão 1.0">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
