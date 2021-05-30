@@ -7,7 +7,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class ActivityTelaSplash extends AppCompatActivity {
-    private static final int TEMPO_TELA_ABERTA = 3000;
+    private static final int TEMPO_TELA_ABERTA = 5000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
