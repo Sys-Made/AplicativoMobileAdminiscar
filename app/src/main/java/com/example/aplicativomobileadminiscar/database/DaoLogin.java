@@ -12,7 +12,7 @@ public class DaoLogin extends SQLiteOpenHelper {
 
     public DaoLogin(@Nullable Context context ){
 
-        super(context, "DB_SYSMADE", null, 1);
+        super(context, "DB_ADMINISCAR", null, 1);
     }
 
     @Override

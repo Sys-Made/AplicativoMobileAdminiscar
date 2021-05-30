@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.aplicativomobileadminiscar">
 
     <application
@@ -10,12 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoMobileAdminiscar">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ActivityMapa"
+            android:label="Onde estamos!" />
+
+        <activity
+            android:name=".ActivityTelaMenu"
+            android:label="Menu Principal" />
         <activity
             android:name=".ActivityTelaLogin"
             android:label="Login" />
         <activity
             android:name=".ActivityTelaSplash"
             android:label="Adminiscar-Ecommerce versão 1.0">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
