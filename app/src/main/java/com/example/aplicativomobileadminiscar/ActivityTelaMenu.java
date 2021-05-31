@@ -27,6 +27,4 @@ public class ActivityTelaMenu extends AppCompatActivity {
         });
     }
 
-
-
 }
