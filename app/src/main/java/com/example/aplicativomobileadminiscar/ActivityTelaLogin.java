@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ import com.example.aplicativomobileadminiscar.database.DtoLogin;
 public class ActivityTelaLogin extends AppCompatActivity {
     Button buttonEntrar;//Declarando objeto botao
     Button buttonCancelar;
+    Button buttonFacebook;
     EditText txtUsuario;
     EditText txtSenha;
     TextView txtEsqueci;
@@ -32,6 +34,8 @@ public class ActivityTelaLogin extends AppCompatActivity {
         txtUsuario = findViewById(R.id.txtUsuario);
         txtSenha = findViewById(R.id.txtSenha);
         txtEsqueci = findViewById(R.id.txtEsqueci);
+        buttonFacebook = findViewById(R.id.buttonFacebook);
+        logarface();
         esquecisenha();
 
 
@@ -50,16 +54,22 @@ public class ActivityTelaLogin extends AppCompatActivity {
     }
     private  void logar(String usuario, String senha){
         // DtoLogin dtoLogin = dao.
-
-
-
         if(dtoLogin.autenticar(usuario,senha)){
             //Ir para a tela de menu.
             Intent telaMenu = new Intent(getApplicationContext(),ActivityTelaMenu.class);
             startActivity(telaMenu);
-        }else{
-            Toast.makeText(this, "Usuario ou Senha incorretos!", Toast.LENGTH_SHORT).show();
         }
+        else{
+            Toast.makeText(this, "Cê é bobo ou quer 1 real?", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    //ir para tela de login do facebook
+    public void logarface(){
+        buttonFacebook.setOnClickListener(v -> {
+            Intent telaFacebook = new Intent(getApplicationContext(), ActivityLoginFacebook.class);
+            startActivity(telaFacebook);
+        });
     }
 
     //vai para a tela de recuperação de senha.

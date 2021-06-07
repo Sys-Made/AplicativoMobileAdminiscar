@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "348286935132",
+    "project_id": "aplicativomobileadminiscar",
+    "storage_bucket": "aplicativomobileadminiscar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348286935132:android:7a0e357508810b17930699",
+        "android_client_info": {
+          "package_name": "com.example.aplicativomobileadminiscar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348286935132-mlihb2j1lh7sdhku0om846rejbvodht7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aplicativomobileadminiscar",
+            "certificate_hash": "03e6d1be40efce780355755670b6405b9d8e354c"
+          }
+        },
+        {
+          "client_id": "348286935132-o0s7eiukf3kau8pu6f2c244poggdeghn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbR8hMZFEBZmLNDN7av7xN2qC1Ac2cauM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348286935132-o0s7eiukf3kau8pu6f2c244poggdeghn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
