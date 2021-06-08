@@ -4,48 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo2">
+    android:background="@drawable/fundo_beauty_full">
 
     <Button
-        android:id="@+id/buttonMapa"
+        android:id="@+id/buttonQuemSomos"
         android:layout_width="75dp"
         android:layout_height="77dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="296dp"
-        android:layout_marginBottom="262dp"
-        android:background="@drawable/maps"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/quem_somos"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewRodape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMapa"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPedidos" />
+
+    <ImageView
+        android:id="@+id/imgViewRodape"
+        android:layout_width="361dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCarros"
+        app:layout_constraintVertical_bias="0.898"
+        app:srcCompat="@drawable/adminiscar_mobile04" />
 
     <TextView
         android:id="@+id/txtMenu"
         android:layout_width="147dp"
         android:layout_height="80dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="37dp"
         android:layout_marginEnd="132dp"
-        android:layout_marginBottom="609dp"
         android:background="@drawable/menu"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCarros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageViewRodape"
-        android:layout_width="361dp"
-        android:layout_height="174dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="25dp"
+    <Button
+        android:id="@+id/buttonCarrinho"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="77dp"
+        android:background="@drawable/carrinho"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMapa"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPedidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSair"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/sair"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMapa"
-        app:srcCompat="@drawable/adminiscar_mobile04" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCarros" />
+
+    <Button
+        android:id="@+id/buttonMapa"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="343dp"
+        android:background="@drawable/onde_estamos"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonQuemSomos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCarrinho" />
+
+    <Button
+        android:id="@+id/buttonPedidos"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/pedidos"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonQuemSomos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCarrinho"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCarros"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="168dp"
+        android:background="@drawable/carros"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo2"
+    android:background="@drawable/fundo_beauty_full"
     tools:context=".ActivityTelaEsqueciSenha">
 
     <ImageView
@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMapa"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCarros"
         app:srcCompat="@drawable/adminiscar_mobile04" />
 
     <EditText
@@ -51,7 +51,7 @@
         android:layout_marginBottom="397dp"
         android:background="@drawable/button_beauty_full"
         android:text="RECUPERAR SENHA"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/cardview_light_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
