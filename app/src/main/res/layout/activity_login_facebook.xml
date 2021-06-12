@@ -23,7 +23,7 @@
             android:layout_width="168dp"
             android:layout_height="198dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/perfil_face_wanted_2"
+            android:src="@drawable/perfilface"
             android:visibility="invisible" />
 
         <TextView

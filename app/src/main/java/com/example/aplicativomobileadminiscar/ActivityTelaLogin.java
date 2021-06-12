@@ -12,15 +12,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.aplicativomobileadminiscar.database.DtoLogin;
+import com.google.firebase.storage.FirebaseStorage;
 
-public class ActivityTelaLogin extends AppCompatActivity {
+ public class ActivityTelaLogin extends AppCompatActivity {
     Button buttonEntrar;//Declarando objeto botao
     Button buttonCancelar;
     Button buttonFacebook;
     EditText txtUsuario;
     EditText txtSenha;
     TextView txtEsqueci;
-
+    
     //Usuario administrador.
     DtoLogin dtoLogin = new DtoLogin("administrador","admin","1234");
 
@@ -60,7 +61,7 @@ public class ActivityTelaLogin extends AppCompatActivity {
             startActivity(telaMenu);
         }
         else{
-            Toast.makeText(this, "Cê é bobo ou quer 1 real?", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Digite os dados corretamente!", Toast.LENGTH_SHORT).show();
         }
     }
 
