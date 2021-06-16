@@ -7,13 +7,24 @@
     android:background="@drawable/fundo_beauty_full">
 
     <Button
+        android:id="@+id/buttonMinhaConta"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="171dp"
+        android:background="@drawable/perfil_menu"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCarros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenu" />
+
+    <Button
         android:id="@+id/buttonQuemSomos"
-        android:layout_width="75dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="78dp"
+        android:layout_width="77dp"
+        android:layout_height="78dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginBottom="98dp"
         android:background="@drawable/quem_somos"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/imgViewRodape"
@@ -26,16 +37,14 @@
         android:layout_width="361dp"
         android:layout_height="174dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="88dp"
         android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
         android:clickable="true"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCarros"
-        app:layout_constraintVertical_bias="0.898"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogout"
         app:srcCompat="@drawable/adminiscar_mobile04" />
 
     <TextView
@@ -43,10 +52,11 @@
         android:layout_width="147dp"
         android:layout_height="80dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="132dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/menu"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCarros"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMinhaConta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -56,7 +66,7 @@
         android:layout_width="75dp"
         android:layout_height="77dp"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="223dp"
         android:layout_marginEnd="186dp"
         android:layout_marginBottom="77dp"
         android:background="@drawable/carrinho"
@@ -67,16 +77,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonSair"
+        android:id="@+id/buttonLogout"
         android:layout_width="75dp"
         android:layout_height="77dp"
         android:layout_marginStart="168dp"
-        android:layout_marginTop="77dp"
         android:layout_marginEnd="168dp"
-        android:layout_marginBottom="266dp"
-        android:background="@drawable/sair"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/logout"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewRodape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCarros" />
@@ -86,10 +95,11 @@
         android:layout_width="75dp"
         android:layout_height="77dp"
         android:layout_marginStart="38dp"
-        android:layout_marginBottom="343dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="99dp"
         android:background="@drawable/onde_estamos"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewRodape"
         app:layout_constraintEnd_toStartOf="@+id/buttonQuemSomos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCarrinho" />
@@ -98,8 +108,9 @@
         android:id="@+id/buttonPedidos"
         android:layout_width="75dp"
         android:layout_height="77dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="223dp"
         android:layout_marginEnd="37dp"
+        android:layout_marginBottom="77dp"
         android:background="@drawable/pedidos"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonQuemSomos"
@@ -112,13 +123,14 @@
         android:layout_width="75dp"
         android:layout_height="77dp"
         android:layout_marginStart="168dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="77dp"
         android:layout_marginEnd="168dp"
+        android:layout_marginBottom="77dp"
         android:background="@drawable/carros"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSair"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMenu" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMinhaConta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
