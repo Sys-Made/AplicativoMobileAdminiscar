@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.CRUD;
 
 import android.app.AlertDialog;
 import android.view.LayoutInflater;
@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.aplicativomobileadminiscar.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
@@ -26,9 +27,9 @@ import java.util.Objects;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewholder>
+public class crudAdapter extends FirebaseRecyclerAdapter<model, crudAdapter.myviewholder>
 {
-    public myadapter(@NonNull FirebaseRecyclerOptions<model> options)
+    public crudAdapter(@NonNull FirebaseRecyclerOptions<model> options)
     {
         super(options);
     }
@@ -43,7 +44,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
 
         holder.edit.setOnClickListener(view -> {
             final DialogPlus dialogPlus=DialogPlus.newDialog(holder.img.getContext())
-                    .setContentHolder(new ViewHolder(R.layout.dialogcontent))
+                    .setContentHolder(new ViewHolder(R.layout.activity_alterar_produto))
                     .setExpanded(true,1100)
                     .create();
 
@@ -80,26 +81,26 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
 
         holder.delete.setOnClickListener(view -> {
             AlertDialog.Builder builder=new AlertDialog.Builder(holder.img.getContext());
-            builder.setTitle("Delete Panel");
-            builder.setMessage("Delete...?");
+            builder.setTitle("DELETAR ITEM");
+            builder.setMessage("Deseja deletar este item?");
 
-            builder.setPositiveButton("Yes", (dialogInterface, i) -> FirebaseDatabase.getInstance().getReference().child("students")
+            builder.setPositiveButton("Sim", (dialogInterface, i) -> FirebaseDatabase.getInstance().getReference().child("students")
                     .child(Objects.requireNonNull(getRef(position).getKey())).removeValue());
 
-            builder.setNegativeButton("No", (dialogInterface, i) -> {
+            builder.setNegativeButton("Não", (dialogInterface, i) -> {
 
             });
 
             builder.show();
         });
 
-    } // End of OnBindViewMethod
+    }
 
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerow,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.catalogo_modelo,parent,false);
         return new myviewholder(view);
     }
 

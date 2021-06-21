@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.CRUD;
 
 public class model
 {

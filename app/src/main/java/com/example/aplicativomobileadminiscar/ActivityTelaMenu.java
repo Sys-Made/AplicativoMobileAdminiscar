@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.aplicativomobileadminiscar.CRUD.ActivityCadastrarProdutos;
+import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaLogin;
+import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaPerfil;
 import com.google.firebase.auth.FirebaseAuth;
 import java.util.Objects;
 
@@ -36,7 +40,7 @@ public class ActivityTelaMenu extends AppCompatActivity {
         buttonLogout.setOnClickListener(v -> {
 
             FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(ActivityTelaMenu.this,ActivityTelaLogin.class);
+            Intent intent = new Intent(ActivityTelaMenu.this, ActivityTelaLogin.class);
             Toast.makeText(ActivityTelaMenu.this, "Usuário deslogado",Toast.LENGTH_LONG).show();
             startActivity(intent);
             finish();

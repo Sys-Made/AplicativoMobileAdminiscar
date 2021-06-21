@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.LOGIN;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.aplicativomobileadminiscar.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -48,7 +49,7 @@ public class ActivityCriarConta extends AppCompatActivity {
     private void voltarTelaLogin(){
 
         buttonVoltarLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(ActivityCriarConta.this,ActivityTelaLogin.class);
+            Intent intent = new Intent(ActivityCriarConta.this, ActivityTelaLogin.class);
             startActivity(intent);
             finish();
         });

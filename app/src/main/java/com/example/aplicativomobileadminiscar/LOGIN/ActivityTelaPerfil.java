@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.LOGIN;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
+import com.example.aplicativomobileadminiscar.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -50,7 +53,7 @@ public class ActivityTelaPerfil extends AppCompatActivity {
         // sai da conta e volta pra tela de login
         bt_deslogar.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(ActivityTelaPerfil.this,ActivityTelaLogin.class);
+            Intent intent = new Intent(ActivityTelaPerfil.this, ActivityTelaLogin.class);
             Toast.makeText(ActivityTelaPerfil.this, "Usuário deslogado",Toast.LENGTH_LONG).show();
             startActivity(intent);
             finish();

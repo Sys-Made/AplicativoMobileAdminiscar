@@ -3,6 +3,9 @@ package com.example.aplicativomobileadminiscar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaLogin;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +26,7 @@ public class ActivityTelaSplash extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
-                Intent telaLogin = new Intent(getApplicationContext(),ActivityTelaLogin.class);
+                Intent telaLogin = new Intent(getApplicationContext(), ActivityTelaLogin.class);
                 startActivity(telaLogin);
             }
         },TEMPO_TELA_ABERTA);

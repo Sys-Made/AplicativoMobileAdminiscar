@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.CRUD;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +8,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.aplicativomobileadminiscar.R;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class adddata extends AppCompatActivity
+public class ActivityInserirProduto extends AppCompatActivity
 {
     EditText name,course,email,purl;
     Button submit,back;
@@ -22,7 +23,7 @@ public class adddata extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adddata);
+        setContentView(R.layout.activity_inserir_produto);
 
         name= findViewById(R.id.add_name);
         email= findViewById(R.id.add_email);
@@ -31,7 +32,7 @@ public class adddata extends AppCompatActivity
 
         back= findViewById(R.id.add_back);
         back.setOnClickListener(view -> {
-            startActivity(new Intent(getApplicationContext(),ActivityCadastrarProdutos.class));
+            startActivity(new Intent(getApplicationContext(), ActivityCadastrarProdutos.class));
             finish();
         });
 

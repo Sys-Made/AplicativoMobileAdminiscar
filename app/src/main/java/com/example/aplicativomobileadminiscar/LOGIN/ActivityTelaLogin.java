@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.LOGIN;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -13,6 +13,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
+import com.example.aplicativomobileadminiscar.R;
+import com.example.aplicativomobileadminiscar.CRUD.ActivityCadastrarProdutos;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import java.util.Objects;
@@ -123,7 +126,7 @@ import java.util.Objects;
 
 
      private void TelaProdutos(){
-         Intent intent = new Intent(ActivityTelaLogin.this,ActivityCadastrarProdutos.class);
+         Intent intent = new Intent(ActivityTelaLogin.this, ActivityCadastrarProdutos.class);
          startActivity(intent);
          finish();
          Toast.makeText(getBaseContext(),"Bem vindo patrão!",
@@ -131,7 +134,7 @@ import java.util.Objects;
      }
 
      private void TelaMenu(){
-        Intent intent = new Intent(ActivityTelaLogin.this,ActivityTelaMenu.class);
+        Intent intent = new Intent(ActivityTelaLogin.this, ActivityTelaMenu.class);
         startActivity(intent);
         finish();
          Toast.makeText(getBaseContext(),"Seja bem vindo!",

@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoMobileAdminiscar">
-        <activity android:name=".adddata" />
-        <activity android:name=".ActivityCadastrarProdutos" />
-        <activity android:name=".ActivityTelaPerfil" />
+        <activity android:name=".CRUD.ActivityInserirProduto" />
+        <activity android:name=".CRUD.ActivityCadastrarProdutos" />
+        <activity android:name=".LOGIN.ActivityTelaPerfil" />
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -38,8 +38,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".ActivityLoginFacebook" />
-        <activity android:name=".ActivityCriarConta" />
+        <activity android:name=".LOGIN.ActivityLoginFacebook" />
+        <activity android:name=".LOGIN.ActivityCriarConta" />
         <activity
             android:name=".ActivityMapa"
             android:label="ONDE ESTAMOS!" />
@@ -47,10 +47,10 @@
             android:name=".ActivityTelaMenu"
             android:label="MENU PRINCIPAL" />
         <activity
-            android:name=".ActivityTelaLogin"
+            android:name=".LOGIN.ActivityTelaLogin"
             android:label="LOGIN" />
         <activity
-            android:name=".ActivityTelaEsqueciSenha"
+            android:name=".LOGIN.ActivityTelaEsqueciSenha"
             android:label="RECUPERAR SENHA"
             android:textColor="@color/colorAccent" />
         <activity

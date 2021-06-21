@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar;
+package com.example.aplicativomobileadminiscar.CRUD;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
+import com.example.aplicativomobileadminiscar.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ActivityCadastrarProdutos extends AppCompatActivity {
 
     RecyclerView recyclerview;
-    myadapter adapter;
+    crudAdapter adapter;
     FloatingActionButton bt_add;
     FloatingActionButton buttonMenu;
 
@@ -43,11 +45,11 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("students"), model.class)
                         .build();
 
-        adapter=new myadapter(options);
+        adapter=new crudAdapter(options);
         recyclerview.setAdapter(adapter);
 
         bt_add= findViewById(R.id.bt_add);
-        bt_add.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(),adddata.class)));
+        bt_add.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ActivityInserirProduto.class)));
 
         FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
         assert usuarioAtual != null;
@@ -108,7 +110,7 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("students").orderByChild("course").startAt(s).endAt(s+"\uf8ff"), model.class)
                         .build();
 
-        adapter=new myadapter(options);
+        adapter=new crudAdapter(options);
         adapter.startListening();
         recyclerview.setAdapter(adapter);
 
