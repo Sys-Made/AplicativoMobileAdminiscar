@@ -17,16 +17,10 @@
             android:id="@+id/buttonCancelar"
             android:layout_width="119dp"
             android:layout_height="47dp"
-<<<<<<< HEAD
             android:layout_marginStart="48dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="2dp"
-=======
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="1dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:layout_weight="1"
             android:background="@drawable/button_beauty_full"
             android:text="Cancelar"
@@ -36,11 +30,7 @@
             app:layout_constraintBottom_toTopOf="@+id/progressBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonEntrar"
-<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@+id/txtSenhaLogLayout" />
-=======
-            app:layout_constraintTop_toBottomOf="@+id/edit_senha_login" />
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 
         <ImageView
             android:id="@+id/logo_login"
@@ -49,11 +39,7 @@
             android:layout_marginStart="125dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="126dp"
-<<<<<<< HEAD
             android:layout_marginBottom="6dp"
-=======
-            android:layout_marginBottom="3dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:background="@drawable/adminiscar_mobile05"
             app:layout_constraintBottom_toTopOf="@+id/edit_email_login"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,16 +50,9 @@
             android:id="@+id/edit_email_login"
             android:layout_width="307dp"
             android:layout_height="47dp"
-<<<<<<< HEAD
             android:layout_marginStart="53dp"
             android:layout_marginEnd="51dp"
             android:layout_marginBottom="1dp"
-=======
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="10dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:background="@drawable/button_beauty_full02"
             android:drawableRight="@drawable/ic_email"
             android:ems="10"
@@ -84,16 +63,11 @@
             android:textAlignment="textStart"
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textSize="14sp"
-<<<<<<< HEAD
             app:layout_constraintBottom_toTopOf="@+id/txtSenhaLogLayout"
-=======
-            app:layout_constraintBottom_toTopOf="@+id/edit_senha_login"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logo_login" />
 
-<<<<<<< HEAD
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtSenhaLogLayout"
             android:layout_width="314dp"
@@ -122,43 +96,14 @@
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
-=======
-        <EditText
-            android:id="@+id/edit_senha_login"
-            android:layout_width="306dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="53dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="17dp"
-            android:background="@drawable/button_beauty_full02"
-            android:drawableRight="@drawable/ic_senha"
-            android:ems="10"
-            android:hint="Digite sua senha:"
-            android:inputType="numberPassword"
-            android:maxLength="8"
-            android:padding="15dp"
-            android:textAlignment="textStart"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/buttonCancelar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edit_email_login" />
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 
         <Button
             android:id="@+id/buttonEntrar"
             android:layout_width="119dp"
             android:layout_height="47dp"
-<<<<<<< HEAD
             android:layout_marginStart="32dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="1dp"
-=======
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="69dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:layout_weight="1"
             android:background="@drawable/button_beauty_full"
             android:text="Entrar"
@@ -168,25 +113,16 @@
             app:layout_constraintBottom_toTopOf="@+id/progressBar"
             app:layout_constraintEnd_toStartOf="@+id/buttonCancelar"
             app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@+id/txtSenhaLogLayout" />
-=======
-            app:layout_constraintTop_toBottomOf="@+id/edit_senha_login" />
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 
         <Button
             android:id="@+id/buttonFacebook"
             android:layout_width="276dp"
             android:layout_height="47dp"
             android:layout_marginStart="67dp"
-<<<<<<< HEAD
             android:layout_marginTop="1dp"
             android:layout_marginEnd="68dp"
             android:layout_marginBottom="16dp"
-=======
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="18dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:background="@drawable/bt_facebook"
             android:text="        ENTRAR COM O FACEBOOK"
             android:textAlignment="center"
@@ -202,24 +138,15 @@
             android:layout_width="275dp"
             android:layout_height="50dp"
             android:layout_marginStart="68dp"
-<<<<<<< HEAD
             android:layout_marginTop="1dp"
             android:layout_marginEnd="68dp"
             android:layout_marginBottom="38dp"
-=======
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="93dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:background="@drawable/button_beauty_full"
             android:text="CADASTRE-SE"
             android:textColor="@color/cardview_light_background"
             android:textSize="16sp"
             android:textStyle="bold"
-<<<<<<< HEAD
             app:layout_constraintBottom_toTopOf="@+id/textViewVersao"
-=======
-            app:layout_constraintBottom_toBottomOf="parent"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -228,14 +155,9 @@
             android:id="@+id/textView"
             android:layout_width="248dp"
             android:layout_height="27dp"
-<<<<<<< HEAD
             android:layout_marginStart="82dp"
             android:layout_marginEnd="81dp"
             android:layout_marginBottom="1dp"
-=======
-            android:layout_marginStart="81dp"
-            android:layout_marginEnd="82dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:clickable="false"
             android:text="AINDA NÃO TEM LOGIN?"
             android:textAlignment="center"
@@ -286,14 +208,8 @@
             android:layout_width="303dp"
             android:layout_height="40dp"
             android:layout_marginStart="53dp"
-<<<<<<< HEAD
             android:layout_marginEnd="55dp"
             android:layout_marginBottom="9dp"
-=======
-            android:layout_marginTop="38dp"
-            android:layout_marginEnd="55dp"
-            android:layout_marginBottom="16dp"
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             android:fontFamily="sans-serif-black"
             android:text="Adminiscar Mobile versão 1.0"
             android:textAlignment="center"

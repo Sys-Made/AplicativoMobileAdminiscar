@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".ActivityCadastrarProdutos">
 
 
@@ -59,9 +58,4 @@
         tools:visibility="visible" />
 
 
-=======
-    android:background="@drawable/fundo_beauty_full"
-    tools:context=".ActivityCadastrarProdutos">
-
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 </androidx.constraintlayout.widget.ConstraintLayout>

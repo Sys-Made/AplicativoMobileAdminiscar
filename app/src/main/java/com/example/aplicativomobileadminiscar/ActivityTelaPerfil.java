@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-<<<<<<< HEAD
-=======
-
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;

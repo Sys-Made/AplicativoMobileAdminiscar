@@ -10,10 +10,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import  android.view.View;
 import android.widget.Toast;
-<<<<<<< HEAD
-=======
-
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
@@ -49,11 +45,7 @@ public class ActivityTelaEsqueciSenha extends AppCompatActivity {
 
         buttonRecuperaSenha.setOnClickListener(v -> {
 
-<<<<<<< HEAD
         String email = editRecuperaSenha.getText().toString().trim();
-=======
-        String email = editRecuperaSenha.getText().toString();
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
 
         if (email.isEmpty()){
             Toast.makeText(getBaseContext(),"Insira o e-mail para poder recuperar sua senha",
@@ -75,11 +67,7 @@ public class ActivityTelaEsqueciSenha extends AppCompatActivity {
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
-<<<<<<< HEAD
             public void onFailure(@NotNull Exception e) {
-=======
-            public void onFailure(@NonNull @NotNull Exception e) {
->>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
                 Toast.makeText(getBaseContext(),"Erro ao enviar o email",
                         Toast.LENGTH_LONG).show();
             }
