@@ -11,8 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoMobileAdminiscar">
+<<<<<<< HEAD
         <activity android:name=".adddata" />
         <activity android:name=".ActivityCadastrarProdutos" />
+=======
+        <activity android:name=".ActivityCadastrarProdutos"></activity>
+>>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
         <activity android:name=".ActivityTelaPerfil" />
         <activity
             android:name="com.facebook.FacebookActivity"

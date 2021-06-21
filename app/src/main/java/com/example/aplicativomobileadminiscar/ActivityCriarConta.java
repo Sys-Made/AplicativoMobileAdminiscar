@@ -48,6 +48,11 @@ public class ActivityCriarConta extends AppCompatActivity {
     private void voltarTelaLogin(){
 
         buttonVoltarLogin.setOnClickListener(v -> {
+<<<<<<< HEAD
+=======
+
+            FirebaseAuth.getInstance().signOut();
+>>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
             Intent intent = new Intent(ActivityCriarConta.this,ActivityTelaLogin.class);
             startActivity(intent);
             finish();
@@ -125,6 +130,9 @@ public class ActivityCriarConta extends AppCompatActivity {
                 Log.d("db_error", "Erro ao salvar os dados" + e.toString());
             }
         });
+<<<<<<< HEAD
         FirebaseAuth.getInstance().signOut();
+=======
+>>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
     }
 }

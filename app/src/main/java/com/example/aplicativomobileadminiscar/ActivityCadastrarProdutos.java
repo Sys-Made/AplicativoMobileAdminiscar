@@ -1,5 +1,6 @@
 package com.example.aplicativomobileadminiscar;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -24,10 +25,19 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
     FloatingActionButton bt_add;
     FloatingActionButton buttonMenu;
 
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class ActivityCadastrarProdutos extends AppCompatActivity {
+
+>>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_produtos);
+<<<<<<< HEAD
         setTitle("Procure seu veículo aqui...");
 
         buttonMenu= findViewById(R.id.buttonMenu);
@@ -120,5 +130,7 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
             Intent telaMenu = new Intent(getApplicationContext(), ActivityTelaMenu.class);
             startActivity(telaMenu);
         });
+=======
+>>>>>>> 452c23c9cad88b28416f2975e0a89a7533484b24
     }
 }
