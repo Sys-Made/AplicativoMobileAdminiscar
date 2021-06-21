@@ -7,4 +7,133 @@
     android:background="@drawable/fundo_beauty_full"
     tools:context=".ActivityCriarConta">
 
+    <Button
+        android:id="@+id/buttonVoltarLogin"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/icone_voltar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCadastrarConta" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="53dp"
+
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_beauty_full02"
+        android:drawableRight="@drawable/ic_email"
+        android:ems="10"
+        android:hint="Digite seu email:"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:padding="15dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <ImageView
+        android:id="@+id/logo_criar_conta"
+        android:layout_width="160dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/adminiscar_mobile05"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCadastre_se"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button_beauty_full02"
+        android:drawableRight="@drawable/ic_nome"
+        android:ems="10"
+        android:hint="Digite seu nome:"
+        android:inputType="text"
+        android:maxLength="30"
+        android:padding="15dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCadastre_se" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="309dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_beauty_full02"
+        android:drawableRight="@drawable/ic_senha"
+        android:ems="10"
+        android:hint="Digite sua senha:"
+        android:inputType="numberPassword"
+        android:maxLength="8"
+        android:padding="15dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCadastrarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <Button
+        android:id="@+id/buttonCadastrarConta"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="46dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_beauty_full"
+        android:text="Cadastrar"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVoltarLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+    <TextView
+        android:id="@+id/textViewCadastre_se"
+        android:layout_width="257dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="17dp"
+        android:text="Cadastre-se"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_criar_conta" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoMobileAdminiscar">
-
+        <activity android:name=".adddata" />
+        <activity android:name=".ActivityCadastrarProdutos" />
+        <activity android:name=".ActivityTelaPerfil" />
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -32,19 +34,12 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".ActivityLoginFacebook">
-        </activity>
-
-        <activity
-            android:name=".ActivityCriarConta">
-        </activity>
-
+        <activity android:name=".ActivityLoginFacebook" />
+        <activity android:name=".ActivityCriarConta" />
         <activity
             android:name=".ActivityMapa"
             android:label="ONDE ESTAMOS!" />

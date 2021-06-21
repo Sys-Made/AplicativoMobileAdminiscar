@@ -18,11 +18,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCarros"
         app:srcCompat="@drawable/adminiscar_mobile04" />
 
     <EditText
-        android:id="@+id/txtRecuperaSenha"
+        android:id="@+id/editRecuperaSenha"
         android:layout_width="362dp"
         android:layout_height="43dp"
         android:layout_marginStart="25dp"
@@ -31,6 +30,7 @@
         android:background="@drawable/button_beauty_full02"
         android:ems="10"
         android:hint="E-MAIL"
+        android:drawableRight="@drawable/ic_email"
         android:inputType="textPersonName"
         android:padding="15dp"
         android:textAlignment="textStart"
@@ -55,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRecuperaSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/editRecuperaSenha" />
 
     <TextView
         android:id="@+id/textView2"
@@ -70,7 +70,7 @@
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtRecuperaSenha"
+        app:layout_constraintBottom_toTopOf="@+id/editRecuperaSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

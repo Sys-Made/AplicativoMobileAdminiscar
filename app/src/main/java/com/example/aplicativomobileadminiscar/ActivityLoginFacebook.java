@@ -20,11 +20,14 @@ import com.facebook.login.widget.LoginButton;
 import org.json.JSONException;
 import java.util.Arrays;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ActivityLoginFacebook extends AppCompatActivity {
 
     LoginButton login_button;
-    ImageView profile_pic;
+    CircleImageView profile_pic;
     TextView profile_name;
+    ImageView imgViewRodape3;
 
     private CallbackManager callbackManager;
 
@@ -33,9 +36,14 @@ public class ActivityLoginFacebook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_facebook);
 
+        getSupportActionBar().hide();
+
         login_button = findViewById(R.id.login_button);
         profile_name = findViewById(R.id.profile_name);
         profile_pic = findViewById(R.id.profile_pic);
+        imgViewRodape3 = findViewById(R.id.imgViewRodape3);
+
+        voltarlogin();
 
         callbackManager = CallbackManager.Factory.create();
         login_button.setPermissions(Arrays.asList("email","public_profile"));
@@ -103,5 +111,13 @@ public class ActivityLoginFacebook extends AppCompatActivity {
         parameters.putString("fields","first_name,last_name,id");
         request.setParameters(parameters);
         request.executeAsync();
+    }
+
+    //voltar tela login
+    private void voltarlogin(){
+        imgViewRodape3.setOnClickListener(v -> {
+            Intent telaLogin = new Intent(getApplicationContext(), ActivityTelaLogin.class);
+            startActivity(telaLogin);
+        });
     }
 }

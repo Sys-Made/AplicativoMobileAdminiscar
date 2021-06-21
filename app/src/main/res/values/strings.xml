@@ -3,5 +3,7 @@
     <string name="facebook_app_id">1126023067895520</string>
     <string name="fb_login_protocol_scheme">fb1126023067895520</string>
     <string name="todo">TODO</string>
+    <string name="botao_adicionar">botao_adicionar</string>
+    <string name="btadd">botao_adicionar</string>
 
 </resources>
