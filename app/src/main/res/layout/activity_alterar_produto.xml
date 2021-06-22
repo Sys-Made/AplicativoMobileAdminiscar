@@ -15,39 +15,39 @@
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/uimgurl"
+        android:id="@+id/edit_alter_img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Image URL"
+        android:hint="Imagem URL"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_alter_modelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Modelo"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/uname"
+        android:id="@+id/edit_alter_comb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Name"
+        android:hint="Combustivel"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/ucourse"
+        android:id="@+id/edit_alter_diaria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Course"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/uemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Email"
+        android:hint="Diaria"
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/usubmit"
+        android:id="@+id/bt_alter_item"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

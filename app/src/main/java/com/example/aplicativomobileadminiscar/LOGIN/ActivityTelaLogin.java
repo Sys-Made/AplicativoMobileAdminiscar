@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
 import com.example.aplicativomobileadminiscar.R;
-import com.example.aplicativomobileadminiscar.CRUD.ActivityCadastrarProdutos;
+import com.example.aplicativomobileadminiscar.PRODUTO.ActivityCadastrarProdutos;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import java.util.Objects;

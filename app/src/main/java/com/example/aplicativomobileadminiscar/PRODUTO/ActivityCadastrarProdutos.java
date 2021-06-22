@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar.CRUD;
+package com.example.aplicativomobileadminiscar.PRODUTO;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,8 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ActivityCadastrarProdutos extends AppCompatActivity {
 
     RecyclerView recyclerview;
-    crudAdapter adapter;
-    FloatingActionButton bt_add;
+    produtoAdapter adapter;
+    FloatingActionButton buttonAdicionar;
     FloatingActionButton buttonMenu;
 
     @Override
@@ -42,21 +42,21 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
 
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students"), model.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("carros"), model.class)
                         .build();
 
-        adapter=new crudAdapter(options);
+        adapter=new produtoAdapter(options);
         recyclerview.setAdapter(adapter);
 
-        bt_add= findViewById(R.id.bt_add);
-        bt_add.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ActivityInserirProduto.class)));
+        buttonAdicionar= findViewById(R.id.buttonAdicionar);
+        buttonAdicionar.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ActivityInserirProduto.class)));
 
         FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
         assert usuarioAtual != null;
         if (usuarioAtual.toString().equals("admin@gmail.com")){
-            bt_add.setVisibility(View.VISIBLE);
+            buttonAdicionar.setVisibility(View.VISIBLE);
         }else{
-            bt_add.setVisibility(View.VISIBLE);
+            buttonAdicionar.setVisibility(View.VISIBLE);
         }
     }
 
@@ -78,9 +78,9 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        getMenuInflater().inflate(R.menu.searchmenu,menu);
+        getMenuInflater().inflate(R.menu.menu_buscar,menu);
 
-        MenuItem item=menu.findItem(R.id.search);
+        MenuItem item=menu.findItem(R.id.buscar);
 
         SearchView searchView=(SearchView)item.getActionView();
 
@@ -89,13 +89,13 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String s) {
 
-                processsearch(s);
+                metodoBuscar(s);
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String s) {
-                processsearch(s);
+                metodoBuscar(s);
                 return false;
             }
         });
@@ -103,14 +103,14 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    private void processsearch(String s)
+    private void metodoBuscar(String s)
     {
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students").orderByChild("course").startAt(s).endAt(s+"\uf8ff"), model.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("carros").orderByChild("modelo").startAt(s).endAt(s+"\uf8ff"), model.class)
                         .build();
 
-        adapter=new crudAdapter(options);
+        adapter=new produtoAdapter(options);
         adapter.startListening();
         recyclerview.setAdapter(adapter);
 

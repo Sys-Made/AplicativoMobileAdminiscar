@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CRUD.ActivityCadastrarProdutos">
+    tools:context=".PRODUTO.ActivityCadastrarProdutos">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -14,23 +14,25 @@
         android:background="@drawable/fundo_beauty_full"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/bt_add"
+        android:id="@+id/buttonAdicionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="314dp"
-        android:layout_marginTop="638dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="634dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
         android:visibility="visible"
-        app:backgroundTint="@android:color/holo_red_light"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,14 +44,14 @@
         android:id="@+id/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="638dp"
-        android:layout_marginEnd="319dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="634dp"
+        android:layout_marginEnd="339dp"
+        android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
         android:visibility="visible"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
