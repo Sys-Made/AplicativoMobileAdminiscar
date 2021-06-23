@@ -19,6 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:editable="true"
         android:hint="Imagem URL"
         android:textSize="16sp" />
 
@@ -35,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:editable="true"
         android:hint="Combustivel"
         android:textSize="20sp" />
 

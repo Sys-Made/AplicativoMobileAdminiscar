@@ -78,13 +78,15 @@
                 android:id="@+id/alterar_item"
                 android:layout_width="193dp"
                 android:layout_height="40dp"
-                android:src="@drawable/alterar2" />
+                android:src="@drawable/alterar2"
+                android:visibility="invisible" />
 
             <ImageView
                 android:id="@+id/deletar_item"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:src="@drawable/delete2" />
+                android:src="@drawable/delete2"
+                android:visibility="invisible" />
         </LinearLayout>
     </LinearLayout>
 

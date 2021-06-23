@@ -6,11 +6,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.SearchView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
 import com.example.aplicativomobileadminiscar.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -19,10 +17,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Objects;
+
 public class ActivityCadastrarProdutos extends AppCompatActivity {
 
     RecyclerView recyclerview;
-    produtoAdapter adapter;
+    produtoAdapter adapter;// faz a integraçao desta activity com o catalogo_modelo + inserir_produto + alterar_produto + menu_buscar + model
     FloatingActionButton buttonAdicionar;
     FloatingActionButton buttonMenu;
 
@@ -42,7 +42,7 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
 
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("carros"), model.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("carros"), model.class)// traz os dados do banco referido
                         .build();
 
         adapter=new produtoAdapter(options);
@@ -51,11 +51,9 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
         buttonAdicionar= findViewById(R.id.buttonAdicionar);
         buttonAdicionar.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ActivityInserirProduto.class)));
 
-        FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
-        assert usuarioAtual != null;
-        if (usuarioAtual.toString().equals("admin@gmail.com")){
-            buttonAdicionar.setVisibility(View.VISIBLE);
-        }else{
+        String usuarioAtual = (Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getEmail());
+        assert usuarioAtual != null;// estou dizendo para o sistema que o usuario nao é nulo
+        if (usuarioAtual.equals("admin@gmail.com")){
             buttonAdicionar.setVisibility(View.VISIBLE);
         }
     }

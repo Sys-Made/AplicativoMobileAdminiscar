@@ -31,14 +31,13 @@
         android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:backgroundTint="?android:attr/colorActivatedHighlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add"
-        tools:visibility="visible" />
+        app:srcCompat="@drawable/add" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/buttonMenu"
@@ -50,14 +49,12 @@
         android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
-        android:visibility="visible"
         app:backgroundTint="?android:attr/colorActivatedHighlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu"
-        tools:visibility="visible" />
+        app:srcCompat="@drawable/menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
