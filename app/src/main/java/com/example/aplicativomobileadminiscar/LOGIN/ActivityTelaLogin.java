@@ -1,6 +1,5 @@
 package com.example.aplicativomobileadminiscar.LOGIN;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -13,14 +12,17 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
+import com.example.aplicativomobileadminiscar.PRODUTO.ActivityVerProdutos;
 import com.example.aplicativomobileadminiscar.R;
-import com.example.aplicativomobileadminiscar.PRODUTO.ActivityCadastrarProdutos;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
 import java.util.Objects;
 
- public class ActivityTelaLogin extends AppCompatActivity {
+public class ActivityTelaLogin extends AppCompatActivity {
     Button buttonEntrar;//Declarando objeto botao
     Button buttonCancelar;
     Button buttonFacebook;
@@ -90,17 +92,17 @@ import java.util.Objects;
 
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha).addOnCompleteListener(task -> {
 
-             if (email.equals("admin@gmail.com") && senha.equals("12345678")){
+             if (email.equals("admin@gmail.com") && senha.equals("87654321")){
                  progressBar.setVisibility(View.VISIBLE);
 
-                 new Handler(Looper.getMainLooper()).postDelayed(this::TelaProdutos, 3000);
+                 new Handler(Looper.getMainLooper()).postDelayed(this::telaGerente, 3000);
 
             }
 
             else if (task.isSuccessful()){
                 progressBar.setVisibility(View.VISIBLE);
 
-                new Handler(Looper.getMainLooper()).postDelayed(this::TelaMenu, 3000);
+                new Handler(Looper.getMainLooper()).postDelayed(this::telaCliente, 3000);
             }else{
 
 
@@ -119,25 +121,30 @@ import java.util.Objects;
      protected void onStart() {
          super.onStart();
          FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
-             if (usuarioAtual != null) {
-                 TelaMenu();
-             }
+         if (usuarioAtual != null) {
+             Intent intent = new Intent(getApplicationContext(),ActivityVerProdutos.class);
+             startActivity(intent);
+             Toast.makeText(getBaseContext(),"Bem vindo de volta!",
+                     Toast.LENGTH_LONG).show();
+         }
+
      }
 
 
-     private void TelaProdutos(){
-         Intent intent = new Intent(ActivityTelaLogin.this, ActivityCadastrarProdutos.class);
+
+     private void telaGerente(){
+         Intent intent = new Intent(ActivityTelaLogin.this, ActivityVerProdutos.class);
          startActivity(intent);
          finish();
-         Toast.makeText(getBaseContext(),"Bem vindo patrão!",
+         Toast.makeText(getBaseContext(),"Bem vindo GERENTE!",
                  Toast.LENGTH_LONG).show();
      }
 
-     private void TelaMenu(){
-        Intent intent = new Intent(ActivityTelaLogin.this, ActivityTelaMenu.class);
+     private void telaCliente(){
+        Intent intent = new Intent(ActivityTelaLogin.this, ActivityVerProdutos.class);
         startActivity(intent);
         finish();
-         Toast.makeText(getBaseContext(),"Seja bem vindo!",
+         Toast.makeText(getBaseContext(),"Seja bem vindo CLIENTE!",
                  Toast.LENGTH_LONG).show();
     }
 

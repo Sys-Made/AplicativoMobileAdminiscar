@@ -14,12 +14,11 @@ import com.example.aplicativomobileadminiscar.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
 
-public class ActivityCadastrarProdutos extends AppCompatActivity {
+public class ActivityVerProdutos extends AppCompatActivity {
 
     RecyclerView recyclerview;
     produtoAdapter adapter;// faz a integraçao desta activity com o catalogo_modelo + inserir_produto + alterar_produto + menu_buscar + model
@@ -29,15 +28,15 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastrar_produtos);
+        setContentView(R.layout.activity_ver_produtos);
         setTitle("Procure seu veículo aqui...");
 
-        buttonMenu= findViewById(R.id.buttonMenu);
+        buttonMenu= findViewById(R.id.buttonMenuProduto);
 
         // volta pra tela de menu
         voltarMenu();
 
-        recyclerview= findViewById(R.id.recyclerview);
+        recyclerview= findViewById(R.id.recyclerview_carrinho);
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<model> options =
@@ -48,7 +47,7 @@ public class ActivityCadastrarProdutos extends AppCompatActivity {
         adapter=new produtoAdapter(options);
         recyclerview.setAdapter(adapter);
 
-        buttonAdicionar= findViewById(R.id.buttonAdicionar);
+        buttonAdicionar= findViewById(R.id.buttonAdicionarProduto);
         buttonAdicionar.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ActivityInserirProduto.class)));
 
         String usuarioAtual = (Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getEmail());

@@ -2,67 +2,73 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewCarrinho"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="5dp"
+    app:cardBackgroundColor="@color/dialogplus_card_shadow"
     app:cardCornerRadius="5dp"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="373dp"
-        android:background="@color/dialogplus_card_shadow"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="15dp">
 
-
-        <ImageView
-            android:id="@+id/img_carro"
-            android:layout_width="373dp"
-            android:layout_height="201dp"
-            android:layout_gravity="center_vertical"
-            android:src="@mipmap/ic_launcher" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgItemCarrinho"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="293dp"
+                android:layout_height="111dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txt_modelo"
+                    android:id="@+id/txt_modelo_carrinho"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/colorAccent"
+                    android:background="@drawable/button_beauty_full"
                     android:text="Modelo do carro"
-                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txt_combustivel"
+                    android:id="@+id/txt_comb_carrinho"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="@drawable/button_beauty_full"
                     android:text="Tipo de combustivel"
-                    android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="25sp" />
 
 
                 <TextView
-                    android:id="@+id/txt_diaria"
+                    android:id="@+id/txt_diaria_carrinho"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/ic_launcher_background"
+                    android:background="@drawable/button_beauty_full"
                     android:text="Valor da diária"
-                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
                     android:textSize="25sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -71,24 +77,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/alterar_item"
+                android:id="@+id/detalhes_item_carrinho"
                 android:layout_width="193dp"
                 android:layout_height="40dp"
-                android:src="@drawable/alterar2"
-                android:visibility="invisible" />
+                android:src="@drawable/detalhes" />
 
             <ImageView
-                android:id="@+id/deletar_item"
+                android:id="@+id/deletar_item_carrinho"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:src="@drawable/delete2"
-                android:visibility="invisible" />
+                android:src="@drawable/delete2" />
         </LinearLayout>
     </LinearLayout>
-
-
 </androidx.cardview.widget.CardView>

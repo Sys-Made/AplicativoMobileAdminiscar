@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PRODUTO.ActivityCadastrarProdutos">
-
+    tools:context=".CARRINHO.ActivityVerCarrinho">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+        android:id="@+id/recyclerview_carrinho"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/fundo_beauty_full"
@@ -22,7 +21,7 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buttonAdicionar"
+        android:id="@+id/buttonFazerPedido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="339dp"
@@ -31,16 +30,15 @@
         android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
-        android:visibility="invisible"
         app:backgroundTint="?android:attr/colorActivatedHighlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add" />
+        app:srcCompat="@drawable/pedidos" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buttonMenu"
+        android:id="@+id/buttonMenuCarrinho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -55,6 +53,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,7 +32,7 @@ public class ActivityInserirProduto extends AppCompatActivity
 
         bt_voltar= findViewById(R.id.bt_voltar);
         bt_voltar.setOnClickListener(view -> {
-            startActivity(new Intent(getApplicationContext(), ActivityCadastrarProdutos.class));
+            startActivity(new Intent(getApplicationContext(), ActivityVerProdutos.class));
             finish();
         });
 

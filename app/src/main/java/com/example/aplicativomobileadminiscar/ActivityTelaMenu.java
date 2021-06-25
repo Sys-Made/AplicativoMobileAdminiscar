@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.aplicativomobileadminiscar.PRODUTO.ActivityCadastrarProdutos;
+import com.example.aplicativomobileadminiscar.PRODUTO.ActivityVerProdutos;
 import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaLogin;
 import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaPerfil;
 import com.google.firebase.auth.FirebaseAuth;
@@ -57,7 +57,7 @@ public class ActivityTelaMenu extends AppCompatActivity {
 
     public void abrirCarros(){
         buttonCarros.setOnClickListener(v -> {
-            Intent telaCarros = new Intent(getApplicationContext(), ActivityCadastrarProdutos.class);
+            Intent telaCarros = new Intent(getApplicationContext(), ActivityVerProdutos.class);
             startActivity(telaCarros);
         });
     }

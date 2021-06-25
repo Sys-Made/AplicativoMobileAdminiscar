@@ -12,46 +12,54 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewAlterar"
+            android:id="@+id/textViewAdicionar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/button_beauty_full"
             android:gravity="center"
-            android:text="ALTERAR ITEM?"
+            android:text="ADICIONAR AO CARRINHO?"
             android:textColor="#fff"
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/edit_alter_img_produto"
+            android:id="@+id/edit_add_img_carrinho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
+            android:clickable="false"
+            android:editable="false"
             android:hint="Imagem URL"
             android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="invisible" />
 
         <EditText
-            android:id="@+id/edit_alter_modelo_produto"
+            android:id="@+id/edit_add_modelo_carrinho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:editable="false"
             android:hint="Modelo"
             android:textAlignment="center"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/edit_alter_comb_produto"
+            android:id="@+id/edit_add_comb_carrinho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:editable="false"
             android:hint="Combustivel"
             android:textAlignment="center"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/edit_alter_diaria_produto"
+            android:id="@+id/edit_add_diaria_carrinho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="11dp"
+            android:clickable="false"
+            android:editable="false"
             android:hint="Diaria"
             android:textAlignment="center"
             android:textSize="20sp" />
@@ -59,12 +67,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="74dp"
+        android:layout_height="72dp"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/bt_alter_item_produto"
-            android:layout_width="300dp"
+            android:id="@+id/bt_add_item_carrinho"
+            android:layout_width="match_parent"
             android:layout_height="59dp"
             android:layout_gravity="center"
             android:layout_marginStart="55dp"
@@ -72,7 +80,7 @@
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="431dp"
             android:background="@drawable/button_beauty_full"
-            android:text="ALTERAR"
+            android:text="ADICIONAR"
             android:textColor="#fff"
             android:textSize="20sp" />
     </LinearLayout>
