@@ -4,24 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CARRINHO.ActivityVerCarrinho">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_carrinho"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/fundo_beauty_full"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-    </androidx.recyclerview.widget.RecyclerView>
+    android:background="@drawable/fundo_beauty_full"
+    tools:context=".CRUD.ActivityVerCarrinho">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buttonFazerPedido"
+        android:id="@+id/buttonIrTelaPedido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="339dp"
@@ -30,12 +17,12 @@
         android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
-        app:backgroundTint="?android:attr/colorActivatedHighlight"
+        app:backgroundTint="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pedidos" />
+        app:srcCompat="@drawable/irpedidos" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/buttonMenuCarrinho"
@@ -53,4 +40,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonVoltarCarros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="634dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="41dp"
+        android:clickable="true"
+        android:contentDescription="@string/btadd"
+        app:backgroundTint="@color/com_facebook_button_send_background_color_pressed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltarcarros" />
+
+    <Button
+        android:id="@+id/bt_chama_ver_pedido"
+        android:layout_width="201dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="135dp"
+        android:background="@drawable/imagem_circular"
+        android:fontFamily="sans-serif"
+        android:text="FAZER O PEDIDO"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCarrinho"
+        android:layout_width="380dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="663dp"
+        android:background="@drawable/imagem_circular3"
+        android:fontFamily="sans-serif"
+        android:text="@string/carrinho"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_carrinho"
+        android:layout_width="409dp"
+        android:layout_height="426dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/catalogo_carrinho" />
 </androidx.constraintlayout.widget.ConstraintLayout>

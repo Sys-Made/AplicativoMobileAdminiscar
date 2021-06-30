@@ -11,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoMobileAdminiscar">
-        <activity android:name=".CARRINHO.ActivityVerCarrinho"></activity>
-        <activity android:name=".PRODUTO.ActivityInserirProduto" />
-        <activity android:name=".PRODUTO.ActivityVerProdutos" />
+        <activity android:name=".CRUD.Activityteste"></activity>
+        <activity android:name=".CRUD.ActivityVerPedidoTeste" />
+        <activity android:name=".CRUD.ActivityVerPedido" />
+        <activity android:name=".CRUD.ActivityVerCarrinho" />
+        <activity android:name=".CRUD.ActivityInserirProduto" />
+        <activity android:name=".CRUD.ActivityVerProdutos" />
         <activity android:name=".LOGIN.ActivityTelaPerfil" />
         <activity
             android:name="com.facebook.FacebookActivity"

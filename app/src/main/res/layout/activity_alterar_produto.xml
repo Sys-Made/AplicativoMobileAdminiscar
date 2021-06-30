@@ -8,53 +8,74 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="197dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewAlterar"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/button_beauty_full"
-            android:gravity="center"
-            android:text="ALTERAR ITEM?"
-            android:textColor="#fff"
-            android:textSize="25sp" />
-
         <EditText
-            android:id="@+id/edit_alter_img_produto"
+            android:id="@+id/edit_alter_imagem_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:hint="Imagem URL"
-            android:textAlignment="center"
-            android:textSize="16sp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Imagem URL"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/edit_alter_modelo_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Modelo"
-            android:textAlignment="center"
-            android:textSize="20sp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Modelo"
+            android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/edit_alter_comb_produto"
+            android:id="@+id/edit_alter_cat_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Combustivel"
-            android:textAlignment="center"
-            android:textSize="20sp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Categoria"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/edit_alter_diaria_produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="11dp"
-            android:hint="Diaria"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Diaria"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edit_alter_qtd_dias_produto"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Qtd_dias"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edit_alter_pagamento_produto"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Pagamento"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edit_alter_vl_total_produto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Valor total"
+            android:textAlignment="center"
+            android:visibility="invisible" />
     </LinearLayout>
 
     <LinearLayout

@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar.PRODUTO;
+package com.example.aplicativomobileadminiscar.CRUD;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,15 +15,13 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.Objects;
 
 public class ActivityVerProdutos extends AppCompatActivity {
 
-    RecyclerView recyclerview;
-    produtoAdapter adapter;// faz a integraçao desta activity com o catalogo_modelo + inserir_produto + alterar_produto + menu_buscar + model
-    FloatingActionButton buttonAdicionar;
-    FloatingActionButton buttonMenu;
+    RecyclerView recyclerview_produto;
+    produtoAdapter adapter;// faz a integraçao desta activity com o catalogo_produto + inserir_produto + alterar_produto + menu_buscar + model
+    FloatingActionButton buttonAdicionar, buttonIrCarrinho,buttonMenuProduto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +29,14 @@ public class ActivityVerProdutos extends AppCompatActivity {
         setContentView(R.layout.activity_ver_produtos);
         setTitle("Procure seu veículo aqui...");
 
-        buttonMenu= findViewById(R.id.buttonMenuProduto);
+        buttonMenuProduto= findViewById(R.id.buttonVoltarMenu);
+        buttonIrCarrinho= findViewById(R.id.buttonIrCarrinho);
 
-        // volta pra tela de menu
+        irCarrinho();
         voltarMenu();
 
-        recyclerview= findViewById(R.id.recyclerview_carrinho);
-        recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        recyclerview_produto= findViewById(R.id.recyclerview_produto);
+        recyclerview_produto.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
@@ -45,7 +44,7 @@ public class ActivityVerProdutos extends AppCompatActivity {
                         .build();
 
         adapter=new produtoAdapter(options);
-        recyclerview.setAdapter(adapter);
+        recyclerview_produto.setAdapter(adapter);
 
         buttonAdicionar= findViewById(R.id.buttonAdicionarProduto);
         buttonAdicionar.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ActivityInserirProduto.class)));
@@ -54,6 +53,8 @@ public class ActivityVerProdutos extends AppCompatActivity {
         assert usuarioAtual != null;// estou dizendo para o sistema que o usuario nao é nulo
         if (usuarioAtual.equals("admin@gmail.com")){
             buttonAdicionar.setVisibility(View.VISIBLE);
+        }else{
+            buttonIrCarrinho.setVisibility(View.VISIBLE);
         }
     }
 
@@ -109,15 +110,23 @@ public class ActivityVerProdutos extends AppCompatActivity {
 
         adapter=new produtoAdapter(options);
         adapter.startListening();
-        recyclerview.setAdapter(adapter);
+        recyclerview_produto.setAdapter(adapter);
 
     }
 
     private void voltarMenu(){
 
-        buttonMenu.setOnClickListener(v -> {
+        buttonMenuProduto.setOnClickListener(v -> {
             Intent telaMenu = new Intent(getApplicationContext(), ActivityTelaMenu.class);
             startActivity(telaMenu);
+        });
+    }
+
+    private void irCarrinho(){
+
+        buttonIrCarrinho.setOnClickListener(v -> {
+            Intent telaCarrinho = new Intent(getApplicationContext(), ActivityVerCarrinho.class);
+            startActivity(telaCarrinho);
         });
     }
 }

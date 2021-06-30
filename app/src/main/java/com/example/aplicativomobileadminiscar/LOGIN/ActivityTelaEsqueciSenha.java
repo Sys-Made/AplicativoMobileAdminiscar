@@ -57,19 +57,10 @@ public class ActivityTelaEsqueciSenha extends AppCompatActivity {
 
     private void enviarEmail(String email){
 
-        FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
+        FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnSuccessListener(aVoid ->
                 Toast.makeText(getBaseContext(),"Enviamos uma mensagem para o seu e-mail com um link para você redefinir a senha",
-                        Toast.LENGTH_LONG).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NotNull Exception e) {
-                Toast.makeText(getBaseContext(),"Erro ao enviar o email",
-                        Toast.LENGTH_LONG).show();
-            }
-        });
+                Toast.LENGTH_LONG).show()).addOnFailureListener(e -> Toast.makeText(getBaseContext(),"Erro ao enviar o email",
+                        Toast.LENGTH_LONG).show());
 
     }
     //voltar tela login

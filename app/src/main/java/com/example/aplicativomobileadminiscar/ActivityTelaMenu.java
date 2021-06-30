@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.aplicativomobileadminiscar.PRODUTO.ActivityVerProdutos;
+import com.example.aplicativomobileadminiscar.CRUD.ActivityVerCarrinho;
+import com.example.aplicativomobileadminiscar.CRUD.ActivityVerPedidoTeste;
+import com.example.aplicativomobileadminiscar.CRUD.ActivityVerProdutos;
 import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaLogin;
 import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaPerfil;
 import com.google.firebase.auth.FirebaseAuth;
@@ -17,6 +19,8 @@ public class ActivityTelaMenu extends AppCompatActivity {
     Button buttonLogout;
     Button buttonMinhaConta;
     Button buttonCarros;
+    Button buttonCarrinho;
+    Button buttonPedidos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +32,14 @@ public class ActivityTelaMenu extends AppCompatActivity {
         buttonLogout = findViewById(R.id.buttonLogout);
         buttonMinhaConta = findViewById(R.id.buttonMinhaConta);
         buttonCarros = findViewById(R.id.buttonCarros);
+        buttonCarrinho = findViewById(R.id.buttonCarrinho);
+        buttonPedidos = findViewById(R.id.buttonPedidos);
 
         abrirMapa();
+        abrirPedidos();
         abrirMinhaConta();
         abrirCarros();
+        abrirCarrinho();
         logoutMenu();
     }
 
@@ -62,11 +70,25 @@ public class ActivityTelaMenu extends AppCompatActivity {
         });
     }
 
+    public void abrirCarrinho(){
+        buttonCarrinho.setOnClickListener(v -> {
+            Intent telaCarrinho = new Intent(getApplicationContext(), ActivityVerCarrinho.class);
+            startActivity(telaCarrinho);
+        });
+    }
+
     //Metodo que direciona o usuario para a tela minha conta
     public void abrirMinhaConta(){
         buttonMinhaConta.setOnClickListener(v -> {
             Intent telaMinhaConta = new Intent(getApplicationContext(), ActivityTelaPerfil.class);
             startActivity(telaMinhaConta);
+        });
+    }
+
+    public void abrirPedidos(){
+        buttonPedidos.setOnClickListener(v -> {
+            Intent telaPedidos = new Intent(getApplicationContext(), ActivityVerPedidoTeste.class);
+            startActivity(telaPedidos);
         });
     }
 

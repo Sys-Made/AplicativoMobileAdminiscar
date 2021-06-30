@@ -12,7 +12,8 @@
         android:layout_width="129dp"
         android:layout_height="51dp"
         android:layout_marginStart="55dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="447dp"
+        android:layout_marginEnd="227dp"
         android:layout_marginBottom="233dp"
         android:layout_weight="1"
         android:background="@drawable/button_beauty_full"
@@ -20,9 +21,9 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_deslogar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgEmail" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgPerfilCliente"
@@ -32,10 +33,10 @@
         android:layout_marginStart="122dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="121dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="501dp"
         android:src="@drawable/perfilface"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/textNomeUsuario"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,9 +49,10 @@
         android:layout_marginStart="122dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="121dp"
+        android:layout_marginBottom="501dp"
         android:src="@drawable/perfilgerente"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/textNomeUsuario"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,37 +61,41 @@
         android:id="@+id/textEmailUsuario"
         android:layout_width="235dp"
         android:layout_height="29dp"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="351dp"
         android:layout_marginEnd="58dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="351dp"
         android:textAlignment="textStart"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bt_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textNomeUsuario" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgEmail"
         android:layout_width="49dp"
         android:layout_height="51dp"
         android:layout_marginStart="55dp"
-        android:layout_marginBottom="55dp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_menu"
-        app:layout_constraintEnd_toStartOf="@+id/textEmailUsuario"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="339dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_email" />
 
     <Button
         android:id="@+id/bt_deslogar"
         android:layout_width="129dp"
         android:layout_height="51dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="447dp"
         android:layout_marginEnd="58dp"
-        android:layout_marginBottom="229dp"
+        android:layout_marginBottom="233dp"
         android:layout_weight="1"
         android:background="@drawable/button_beauty_full"
         android:text="Logout"
@@ -97,8 +103,8 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_menu"
-        app:layout_constraintTop_toBottomOf="@+id/textEmailUsuario" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgUser"
@@ -106,9 +112,10 @@
         android:layout_height="51dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="266dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgEmail"
-        app:layout_constraintEnd_toStartOf="@+id/textNomeUsuario"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="414dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_nome" />
@@ -117,17 +124,17 @@
         android:id="@+id/textNomeUsuario"
         android:layout_width="235dp"
         android:layout_height="29dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="279dp"
         android:layout_marginEnd="58dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="423dp"
         android:textAlignment="textStart"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textEmailUsuario"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgUser"
-        app:layout_constraintTop_toBottomOf="@+id/imgPerfilGerente" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.aplicativomobileadminiscar.PRODUTO;
+package com.example.aplicativomobileadminiscar.CRUD;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import java.util.Map;
 
 public class ActivityInserirProduto extends AppCompatActivity
 {
-    EditText modelo,combustivel,diaria,imagem;
+    EditText modelo,categoria,diaria,imagem;
     Button bt_cadastrar,bt_voltar;
 
     @Override
@@ -26,11 +26,12 @@ public class ActivityInserirProduto extends AppCompatActivity
         setContentView(R.layout.activity_inserir_produto);
 
         modelo= findViewById(R.id.edit_modelo);
-        combustivel= findViewById(R.id.edit_combustivel);
+        categoria= findViewById(R.id.edit_categoria);
         diaria= findViewById(R.id.edit_diaria);
         imagem= findViewById(R.id.edit_imagem);
 
         bt_voltar= findViewById(R.id.bt_voltar);
+
         bt_voltar.setOnClickListener(view -> {
             startActivity(new Intent(getApplicationContext(), ActivityVerProdutos.class));
             finish();
@@ -40,18 +41,20 @@ public class ActivityInserirProduto extends AppCompatActivity
         bt_cadastrar.setOnClickListener(view -> metodoCadastrar());
     }
 
+
+
     private void metodoCadastrar()
     {
         Map<String,Object> map=new HashMap<>();
         map.put("modelo",modelo.getText().toString());
-        map.put("combustivel",combustivel.getText().toString());
+        map.put("categoria",categoria.getText().toString());
         map.put("diaria",diaria.getText().toString());
         map.put("imagem",imagem.getText().toString());
         FirebaseDatabase.getInstance().getReference().child("carros").push()
                 .setValue(map)
                 .addOnSuccessListener(aVoid -> {
                     modelo.setText("");
-                    combustivel.setText("");
+                    categoria.setText("");
                     diaria.setText("");
                     imagem.setText("");
                     Toast.makeText(getApplicationContext(),"Cadastrado com sucesso!",Toast.LENGTH_LONG).show();
@@ -59,4 +62,5 @@ public class ActivityInserirProduto extends AppCompatActivity
                 .addOnFailureListener(e -> Toast.makeText(getApplicationContext(),"Falha ao cadastrar!",Toast.LENGTH_LONG).show());
 
     }
+
 }

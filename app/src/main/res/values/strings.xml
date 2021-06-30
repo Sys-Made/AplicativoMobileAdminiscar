@@ -5,5 +5,16 @@
     <string name="todo">TODO</string>
     <string name="botao_adicionar">botao_adicionar</string>
     <string name="btadd">botao_adicionar</string>
+    <string name="alugar">ALUGAR</string>
+    <string name="carrinho">CARRINHO</string>
+    <string name="confirme_as_informa_es">CONFIRME AS INFORMAÇÕES</string>
+    <string-array name="spinner_exemplo">
+        <item>DINHEIRO</item>
+        <item>DÉBITO</item>
+        <item>CRÉDITO</item>
+        <item>PIX</item>
+
+    </string-array>
 
 </resources>
+

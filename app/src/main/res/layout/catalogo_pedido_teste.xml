@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewProduto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@color/dialogplus_card_shadow"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="418dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_pedidoteste"
+                android:layout_width="80dp"
+                android:layout_height="107dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="44dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:text="MODELO:"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:text="CATEGORIA:"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:text="DIÁRIA:"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:text="QTD DIAS:"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:text="VALOR TOTAL:"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="233dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="44dp">
+
+
+                <TextView
+                    android:id="@+id/txt_modelo_catalogo_pedidoteste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_cat_catalogo_pedidoteste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_diaria_catalogo_pedidoteste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_qtd_dias_catalogo_pedidoteste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_valor_total_catalogo_pedidoteste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_beauty_full"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="127dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroupPag"
+                android:layout_width="125dp"
+                android:layout_height="106dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rbCredito"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="DÉBITO"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbDebito"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="CRÉDITO"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbDin"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:text="DINHEIRO"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbPix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="PIX"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_beauty_full"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_alugar_pedidoteste"
+                    android:layout_width="164dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/imagem_circular"
+                    android:clickable="false"
+                    android:text="ALUGAR"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_pagamento_catalogo_pedidoteste"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_beauty_full"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

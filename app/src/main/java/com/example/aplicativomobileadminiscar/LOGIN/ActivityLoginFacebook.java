@@ -1,13 +1,15 @@
 package com.example.aplicativomobileadminiscar.LOGIN;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.bumptech.glide.request.RequestOptions;
 import com.example.aplicativomobileadminiscar.ActivityTelaMenu;
 import com.example.aplicativomobileadminiscar.R;
@@ -19,7 +21,9 @@ import com.facebook.FacebookException;
 import com.facebook.GraphRequest;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+
 import org.json.JSONException;
+
 import java.util.Arrays;
 
 import de.hdodenhof.circleimageview.CircleImageView;
