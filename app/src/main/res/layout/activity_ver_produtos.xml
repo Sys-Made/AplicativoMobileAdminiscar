@@ -36,7 +36,7 @@
         android:layout_marginBottom="41dp"
         android:clickable="true"
         android:contentDescription="@string/btadd"
-        app:backgroundTint="?android:attr/colorActivatedHighlight"
+        app:backgroundTint="?android:attr/colorFocusedHighlight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,16 +63,17 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_produto"
-        android:layout_width="407dp"
-        android:layout_height="730dp"
+        android:layout_width="390dp"
+        android:layout_height="592dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="153dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/catalogo_produto"/>
+        tools:listitem="@layout/catalogo_produto" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

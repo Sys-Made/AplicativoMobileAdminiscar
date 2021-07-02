@@ -9,10 +9,11 @@ public class model
     String qtd_dias;
     String pagamento;
     String valor_total;
+    String status;
 
     public model() {
     }
-    public model(String modelo, String categoria, String diaria, String imagem, String qtd_dias, String pagamento, String valor_total) {
+    public model(String modelo, String categoria, String diaria, String imagem, String qtd_dias, String pagamento, String valor_total,String status) {
         this.modelo = modelo;
         this.categoria = categoria;
         this.diaria = diaria;
@@ -20,6 +21,7 @@ public class model
         this.qtd_dias = qtd_dias;
         this.pagamento = pagamento;
         this.valor_total = valor_total;
+        this.status = status;
     }
 
     public String getModelo() {
@@ -76,6 +78,14 @@ public class model
 
     public void setValor_total(String valor_total) {
         this.valor_total = valor_total;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 }

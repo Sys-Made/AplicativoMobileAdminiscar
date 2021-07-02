@@ -14,86 +14,144 @@
         android:background="@drawable/button_beauty_full"
         android:gravity="center"
         android:text="ADICIONAR AO CARRINHO?"
-        android:textColor="#fff"
-        android:textSize="25sp" />
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="154dp"
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/edit_add_img_carrinho"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:clickable="false"
-            android:editable="false"
-            android:hint="Imagem URL"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:visibility="invisible" />
-
-        <EditText
-            android:id="@+id/edit_add_modelo_carrinho"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="129dp"
             android:layout_height="wrap_content"
-            android:clickable="false"
-            android:editable="false"
-            android:hint="Modelo"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:background="@android:color/holo_orange_light"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edit_add_cat_carrinho"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:editable="false"
-            android:hint="Categoria"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="MODELO:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_add_diaria_carrinho"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="11dp"
-            android:clickable="false"
-            android:editable="false"
-            android:hint="Diaria"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="CATEGORIA:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_add_qtd_dias_carrinho"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="invisible" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="DIÁRIA:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_add_pagamento_carrinho"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="invisible" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_add_valor_total_carrinho"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="invisible" />
+            android:layout_height="155dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_add_img_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:clickable="false"
+                android:editable="false"
+                android:hint="Imagem URL"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_add_modelo_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Modelo"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_add_cat_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Categoria"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_add_diaria_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Diaria"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_add_qtd_dias_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_add_pagamento_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_add_valor_total_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="invisible" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -112,8 +170,9 @@
             android:layout_marginBottom="431dp"
             android:background="@drawable/button_beauty_full"
             android:text="ADICIONAR"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="34sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

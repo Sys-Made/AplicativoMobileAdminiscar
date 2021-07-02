@@ -7,7 +7,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.aplicativomobileadminiscar.CRUD.ActivityVerCarrinho;
-import com.example.aplicativomobileadminiscar.CRUD.ActivityVerPedidoTeste;
+import com.example.aplicativomobileadminiscar.CRUD.ActivityVerMeusPedidos;
+import com.example.aplicativomobileadminiscar.CRUD.ActivityVerPedido;
 import com.example.aplicativomobileadminiscar.CRUD.ActivityVerProdutos;
 import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaLogin;
 import com.example.aplicativomobileadminiscar.LOGIN.ActivityTelaPerfil;
@@ -21,6 +22,7 @@ public class ActivityTelaMenu extends AppCompatActivity {
     Button buttonCarros;
     Button buttonCarrinho;
     Button buttonPedidos;
+    Button buttonQuemSomos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +36,14 @@ public class ActivityTelaMenu extends AppCompatActivity {
         buttonCarros = findViewById(R.id.buttonCarros);
         buttonCarrinho = findViewById(R.id.buttonCarrinho);
         buttonPedidos = findViewById(R.id.buttonPedidos);
-
+        buttonQuemSomos = findViewById(R.id.buttonQuemSomos);
         abrirMapa();
-        abrirPedidos();
+        abrirMeusPedidos();
         abrirMinhaConta();
         abrirCarros();
         abrirCarrinho();
         logoutMenu();
+        abrirQuemSomos();
     }
 
     private void logoutMenu(){
@@ -56,6 +59,13 @@ public class ActivityTelaMenu extends AppCompatActivity {
     }
 
     //Metodo que direciona o usuario para a tela de Mapa
+    public void abrirQuemSomos(){
+        buttonQuemSomos.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ActivityQuemSomos.class);
+            startActivity(intent);
+        });
+    }
+
     public void abrirMapa(){
         buttonMapa.setOnClickListener(v -> {
             Intent telaMapa = new Intent(getApplicationContext(), ActivityMapa.class);
@@ -85,10 +95,10 @@ public class ActivityTelaMenu extends AppCompatActivity {
         });
     }
 
-    public void abrirPedidos(){
+    public void abrirMeusPedidos(){
         buttonPedidos.setOnClickListener(v -> {
-            Intent telaPedidos = new Intent(getApplicationContext(), ActivityVerPedidoTeste.class);
-            startActivity(telaPedidos);
+            Intent telaMeusPedidos = new Intent(getApplicationContext(), ActivityVerMeusPedidos.class);
+            startActivity(telaMeusPedidos);
         });
     }
 

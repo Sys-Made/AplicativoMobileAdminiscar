@@ -20,7 +20,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ActivityTelaPerfil extends AppCompatActivity {
 
-    private TextView nomeUsuario, emailUsuario;
+    private TextView nomeUsuario, emailUsuario,telUsuario,cnhUsuario;
     private Button bt_deslogar;
     private Button bt_menu;
     private CircleImageView imgPerfilCliente, imgPerfilGerente;
@@ -43,6 +43,8 @@ public class ActivityTelaPerfil extends AppCompatActivity {
     private void IniciarComponentes(){
         nomeUsuario = findViewById(R.id.textNomeUsuario);
         emailUsuario = findViewById(R.id.textEmailUsuario);
+        telUsuario = findViewById(R.id.textTelUsuario);
+        cnhUsuario = findViewById(R.id.textCnhUsuario);
         bt_deslogar = findViewById(R.id.bt_deslogar);
         bt_menu = findViewById(R.id.bt_menu);
         imgPerfilCliente = findViewById(R.id.imgPerfilCliente);
@@ -79,6 +81,9 @@ public class ActivityTelaPerfil extends AppCompatActivity {
             if ((documentSnapshot != null)){
                 nomeUsuario.setText(documentSnapshot.getString("nome"));
                 emailUsuario.setText(email);
+                telUsuario.setText(documentSnapshot.getString("telefone"));
+                cnhUsuario.setText(documentSnapshot.getString("cnh"));
+
                 assert email != null;
                 if (email.equals("admin@gmail.com")){
                     imgPerfilGerente.setVisibility(View.VISIBLE);

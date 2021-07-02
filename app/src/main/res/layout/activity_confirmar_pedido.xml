@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/letreiro_conf_Pedido"
-            android:layout_width="376dp"
+            android:layout_width="364dp"
             android:layout_height="44dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="7dp"
@@ -43,12 +43,13 @@
         <LinearLayout
             android:layout_width="133dp"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_orange_light"
+            android:background="@drawable/button_beauty_full05"
             android:orientation="vertical">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -59,8 +60,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="MODELO:"
                 android:textAlignment="center"
@@ -70,8 +73,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="CATEGORIA:"
                 android:textAlignment="center"
@@ -81,8 +86,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="DIÁRIA:"
                 android:textAlignment="center"
@@ -92,8 +99,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="QTD DIAS:"
                 android:textAlignment="center"
@@ -103,8 +112,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="PAGAMENTO:"
                 android:textAlignment="center"
@@ -114,8 +125,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="VALOR TOTAL:"
                 android:textAlignment="center"
@@ -125,15 +138,16 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="277dp"
+            android:layout_width="260dp"
             android:layout_height="match_parent"
-            android:background="@color/dialogplus_card_shadow"
+            android:background="@drawable/button_beauty_full04"
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/edit_alter_imagem_pedidoteste"
+                android:id="@+id/edit_add_imagem_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -141,11 +155,13 @@
                 android:visibility="invisible" />
 
             <EditText
-                android:id="@+id/edit_alter_modelo_pedidoteste"
+                android:id="@+id/edit_add_modelo_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="modelo"
                 android:textAlignment="center"
@@ -153,11 +169,13 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edit_alter_cat_pedidoteste"
+                android:id="@+id/edit_add_cat_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="categoria"
                 android:textAlignment="center"
@@ -165,11 +183,13 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edit_alter_diaria_pedidoteste"
+                android:id="@+id/edit_add_diaria_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="diaria"
                 android:textAlignment="center"
@@ -177,11 +197,13 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/didoteste"
+                android:id="@+id/edit_add_qtd_dias_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="qtd dias"
                 android:textAlignment="center"
@@ -189,11 +211,13 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edit_alter_pagamento_pedidoteste"
+                android:id="@+id/edit_add_pagamento_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="pagamento"
                 android:textAlignment="center"
@@ -201,11 +225,13 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edit_alter_vl_total_pedidoteste"
+                android:id="@+id/edit_add_valor_total_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:editable="false"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text="valor total"
                 android:textAlignment="center"
@@ -222,12 +248,12 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="123dp"
+            android:layout_width="116dp"
             android:layout_height="match_parent"
             android:orientation="horizontal"></LinearLayout>
 
         <Button
-            android:id="@+id/bt_alter_item_pedidoteste"
+            android:id="@+id/bt_add_item_pedido"
             android:layout_width="164dp"
             android:layout_height="match_parent"
             android:background="@drawable/imagem_circular"

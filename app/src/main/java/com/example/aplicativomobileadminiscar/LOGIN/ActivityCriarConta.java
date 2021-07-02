@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class ActivityCriarConta extends AppCompatActivity {
-    private EditText edit_nome, edit_email, edit_senha;
+    private EditText edit_nome,edit_cnh, edit_telefone,edit_email, edit_senha;
     private Button buttonCadastrarConta;
     private Button buttonVoltarLogin;
     String usuarioID;
@@ -42,6 +42,8 @@ public class ActivityCriarConta extends AppCompatActivity {
         edit_nome = findViewById(R.id.edit_nome);
         edit_email = findViewById(R.id.edit_email);
         edit_senha = findViewById(R.id.edit_senha);
+        edit_cnh = findViewById(R.id.edit_cnh);
+        edit_telefone = findViewById(R.id.edit_telefone);
         buttonCadastrarConta = findViewById(R.id.buttonCadastrarConta);
         buttonVoltarLogin = findViewById(R.id.buttonVoltarLogin);
     }
@@ -60,8 +62,10 @@ public class ActivityCriarConta extends AppCompatActivity {
             String nome = edit_nome.getText().toString();
             String email = edit_email.getText().toString();
             String senha = edit_senha.getText().toString();
+            String cnh = edit_cnh.getText().toString();
+            String telefone = edit_telefone.getText().toString();
 
-            if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()){
+            if (nome.isEmpty() || email.isEmpty() || senha.isEmpty() || cnh.isEmpty() || telefone.isEmpty()){
                 Toast.makeText(getBaseContext(),"Preencha todos os campos",
                         Toast.LENGTH_LONG).show();
             }else{
@@ -69,7 +73,7 @@ public class ActivityCriarConta extends AppCompatActivity {
             }
         });
     }
-
+    // salva os dados no firebaseauth
     private void CadastrarUsuario(){
         String email = edit_email.getText().toString();
         String senha = edit_senha.getText().toString();
@@ -102,14 +106,18 @@ public class ActivityCriarConta extends AppCompatActivity {
             }
         });
     }
-
+    // salva os dados no firestore
     private void SalvarDadosUsuario() {
         String nome = edit_nome.getText().toString();
+        String cnh = edit_cnh.getText().toString();
+        String telefone = edit_telefone.getText().toString();
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         Map<String, Object> usuarios = new HashMap<>();
         usuarios.put("nome", nome);
+        usuarios.put("cnh", cnh);
+        usuarios.put("telefone", telefone);
 
         usuarioID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
 

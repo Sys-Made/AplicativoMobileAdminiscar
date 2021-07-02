@@ -91,7 +91,7 @@ public class ActivityTelaLogin extends AppCompatActivity {
 
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha).addOnCompleteListener(task -> {
 
-             if (email.equals("admin@gmail.com") && senha.equals("87654321")){
+             if (email.equals("admin@gmail.com") && senha.equals("12345678")){
                  progressBar.setVisibility(View.VISIBLE);
 
                  new Handler(Looper.getMainLooper()).postDelayed(this::telaGerente, 3000);
@@ -108,7 +108,7 @@ public class ActivityTelaLogin extends AppCompatActivity {
                 try{
                     throw Objects.requireNonNull(task.getException());
                 }catch (Exception e){
-                    Toast.makeText(getBaseContext(),"Ocorreu um erro ao fazer o login",
+                    Toast.makeText(getBaseContext(),"Email ou senha incorretos",
                             Toast.LENGTH_LONG).show();
                 }
 
@@ -135,7 +135,7 @@ public class ActivityTelaLogin extends AppCompatActivity {
          Intent intent = new Intent(ActivityTelaLogin.this, ActivityVerProdutos.class);
          startActivity(intent);
          finish();
-         Toast.makeText(getBaseContext(),"Bem vindo GERENTE!",
+         Toast.makeText(getBaseContext(),"Bem vindo ADMINISTRADOR!",
                  Toast.LENGTH_LONG).show();
      }
 

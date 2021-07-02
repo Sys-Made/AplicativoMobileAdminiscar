@@ -59,7 +59,7 @@ public class ActivityTelaEsqueciSenha extends AppCompatActivity {
 
         FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnSuccessListener(aVoid ->
                 Toast.makeText(getBaseContext(),"Enviamos uma mensagem para o seu e-mail com um link para você redefinir a senha",
-                Toast.LENGTH_LONG).show()).addOnFailureListener(e -> Toast.makeText(getBaseContext(),"Erro ao enviar o email",
+                Toast.LENGTH_LONG).show()).addOnFailureListener(e -> Toast.makeText(getBaseContext(),"Enviamos uma mensagem para o seu e-mail com um link para você redefinir a senha",
                         Toast.LENGTH_LONG).show());
 
     }

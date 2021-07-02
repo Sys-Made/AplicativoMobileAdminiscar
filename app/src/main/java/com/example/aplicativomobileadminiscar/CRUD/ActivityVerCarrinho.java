@@ -24,7 +24,7 @@ public class ActivityVerCarrinho extends AppCompatActivity {
     RecyclerView recyclerview_carrinho;
     carrinhoAdapter carrinho_adapter;
     Button bt_chama_ver_pedido;
-    FloatingActionButton buttonIrTelaPedidos,buttonMenuCarrinho,buttonVoltarCarros;
+    FloatingActionButton bt_ir_tela_meus_pedidos,buttonMenuCarrinho,buttonVoltarCarros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +35,12 @@ public class ActivityVerCarrinho extends AppCompatActivity {
         // setTitle("Procure seu item aqui...");
 
         buttonMenuCarrinho= findViewById(R.id.buttonMenuCarrinho);
-        buttonIrTelaPedidos= findViewById(R.id.buttonIrTelaPedido);
+        bt_ir_tela_meus_pedidos= findViewById(R.id.bt_ir_tela_meus_pedidos);
         buttonVoltarCarros= findViewById(R.id.buttonVoltarCarros);
         bt_chama_ver_pedido= findViewById(R.id.bt_chama_ver_pedido);
 
 
-        irTelaPedido2();
+        irTelaMeusPedidos();
         voltarMenu();
         voltarCarros();
         irTelaPedido();
@@ -133,15 +133,15 @@ public class ActivityVerCarrinho extends AppCompatActivity {
     private void irTelaPedido(){
 
         bt_chama_ver_pedido.setOnClickListener(v -> {
-            Intent telaPedidos = new Intent(getApplicationContext(), ActivityVerPedidoTeste.class);
+            Intent telaPedidos = new Intent(getApplicationContext(), ActivityVerPedido.class);
             startActivity(telaPedidos);
         });
     }
-    private void irTelaPedido2(){
+    private void irTelaMeusPedidos(){
 
-        buttonIrTelaPedidos.setOnClickListener(v -> {
-            Intent telaPedidos2 = new Intent(getApplicationContext(), ActivityVerPedidoTeste.class);
-            startActivity(telaPedidos2);
+        bt_ir_tela_meus_pedidos.setOnClickListener(v -> {
+            Intent telaMeusPedidos = new Intent(getApplicationContext(), ActivityVerMeusPedidos.class);
+            startActivity(telaMeusPedidos);
         });
     }
 }

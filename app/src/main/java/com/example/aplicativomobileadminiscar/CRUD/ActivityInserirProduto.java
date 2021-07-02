@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class ActivityInserirProduto extends AppCompatActivity
 {
@@ -22,6 +23,8 @@ public class ActivityInserirProduto extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inserir_produto);
 

@@ -8,7 +8,7 @@
     tools:context=".CRUD.ActivityVerCarrinho">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buttonIrTelaPedido"
+        android:id="@+id/bt_ir_tela_meus_pedidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="339dp"
@@ -70,7 +70,7 @@
         android:fontFamily="sans-serif"
         android:text="FAZER O PEDIDO"
         android:textAlignment="center"
-        android:textColor="@color/White"
+        android:textColor="@android:color/holo_orange_light"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,7 +90,7 @@
         android:fontFamily="sans-serif"
         android:text="@string/carrinho"
         android:textAlignment="center"
-        android:textColor="@color/White"
+        android:textColor="@android:color/holo_orange_light"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

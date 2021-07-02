@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardViewProduto"
+    android:id="@+id/cardViewPedido"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="5dp"
@@ -11,18 +11,18 @@
     app:cardUseCompatPadding="true">
 
     <LinearLayout
-        android:layout_width="409dp"
+        android:layout_width="393dp"
         android:layout_height="418dp"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="387dp"
             android:layout_height="119dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/img_pedidoteste"
-                android:layout_width="80dp"
+                android:id="@+id/img_pedido"
+                android:layout_width="357dp"
                 android:layout_height="107dp"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
@@ -32,7 +32,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="385dp"
             android:layout_height="150dp"
             android:orientation="horizontal">
 
@@ -51,7 +51,7 @@
                     android:background="@drawable/button_beauty_full"
                     android:text="MODELO:"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textColor="@android:color/holo_orange_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -62,7 +62,7 @@
                     android:background="@drawable/button_beauty_full"
                     android:text="CATEGORIA:"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textColor="@android:color/holo_orange_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -73,7 +73,7 @@
                     android:background="@drawable/button_beauty_full"
                     android:text="DIÁRIA:"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textColor="@android:color/holo_orange_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -84,7 +84,7 @@
                     android:background="@drawable/button_beauty_full"
                     android:text="QTD DIAS:"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textColor="@android:color/holo_orange_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -95,13 +95,13 @@
                     android:background="@drawable/button_beauty_full"
                     android:text="VALOR TOTAL:"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textColor="@android:color/holo_orange_light"
                     android:textSize="20sp"
-                    android:textStyle="bold" />/>
+                    android:textStyle="bold" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="233dp"
+                android:layout_width="222dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 tools:layout_editor_absoluteX="2dp"
@@ -109,67 +109,72 @@
 
 
                 <TextView
-                    android:id="@+id/txt_modelo_catalogo_pedidoteste"
+                    android:id="@+id/txt_modelo_catalogo_pedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/button_beauty_full"
+                    android:background="@drawable/imagem_circular4"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txt_cat_catalogo_pedidoteste"
+                    android:id="@+id/txt_cat_catalogo_pedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/button_beauty_full"
+                    android:background="@drawable/imagem_circular4"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/txt_diaria_catalogo_pedidoteste"
+                    android:id="@+id/txt_diaria_catalogo_pedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/button_beauty_full"
+                    android:background="@drawable/imagem_circular4"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/txt_qtd_dias_catalogo_pedidoteste"
+                    android:id="@+id/txt_qtd_dias_catalogo_pedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/button_beauty_full"
+                    android:background="@drawable/imagem_circular4"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/txt_valor_total_catalogo_pedidoteste"
+                    android:id="@+id/txt_valor_total_catalogo_pedido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/button_beauty_full"
+                    android:background="@drawable/imagem_circular4"
                     android:textAlignment="center"
-                    android:textColor="@color/White"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />/>
             </androidx.appcompat.widget.LinearLayoutCompat>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="390dp"
+            android:layout_width="385dp"
             android:layout_height="127dp"
             android:orientation="horizontal">
 
             <RadioGroup
                 android:id="@+id/radioGroupPag"
-                android:layout_width="125dp"
+                android:layout_width="112dp"
                 android:layout_height="106dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="16dp"
@@ -228,8 +233,8 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/bt_alugar_pedidoteste"
-                    android:layout_width="164dp"
+                    android:id="@+id/bt_alugar_pedido"
+                    android:layout_width="253dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/imagem_circular"
@@ -242,7 +247,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/txt_pagamento_catalogo_pedidoteste"
+                android:id="@+id/txt_pagamento_catalogo_pedido"
                 android:layout_width="wrap_content"
                 android:layout_height="43dp"
                 android:layout_marginStart="10dp"

@@ -5,7 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo_beauty_full"
-    tools:context=".CRUD.ActivityVerPedidoTeste">
+    tools:context=".CRUD.ActivityVerPedido">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonVoltarMenuPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="671dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="102dp"
+        android:clickable="true"
+        android:contentDescription="@string/btadd"
+        app:backgroundTint="?android:attr/colorActivatedHighlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
 
     <TextView
         android:id="@+id/textViewPedido"
@@ -19,7 +36,7 @@
         android:fontFamily="sans-serif"
         android:text="ESCOLHA A FORMA DE PAGAMENTO"
         android:textAlignment="center"
-        android:textColor="@color/White"
+        android:textColor="@android:color/holo_orange_light"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,9 +47,9 @@
         app:layout_constraintVertical_bias="0.187" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_pedidoteste"
-        android:layout_width="415dp"
-        android:layout_height="466dp"
+        android:id="@+id/recyclerview_pedido"
+        android:layout_width="391dp"
+        android:layout_height="468dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -42,6 +59,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.27"
-        tools:listitem="@layout/catalogo_pedido_teste" />
+        tools:listitem="@layout/catalogo_pedido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

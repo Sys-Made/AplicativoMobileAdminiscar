@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="98dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/adminiscar_mobile05"
+        app:layout_constraintBottom_toTopOf="@+id/textTextoEmpresa"
+        app:layout_constraintEnd_toStartOf="@+id/textTituloEmpresa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/textTextoEmpresa"
+        android:layout_width="381dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:text="A Adminiscar é umas das maiores empresas de locação de veículos do continente americano e líder em locação de frotas para empresas. Sendo uma multinacional, possui filiais espalhadas por mais de 15 países incluindo o Brasil. É considerada uma das empresas com os menores preços de alugueis do mercado, além de ser uma das que mais investem em tecnologia digital. Em 2020 ganhou reconhecimento mundial por ter o melhor Sistema de Locação de Veículos que por sinal foi feito pela Sysmade. Foi fundada em 1982 por 3 amigos, James Hetfield, Lars Ulrich e Cliff Burton. Em 2021 a empresa prometeu investir 200 milhões de dólares somente no Brasil, gerando cerca de 5000 mil empregos diretos e indiretos."
+        android:textColor="@color/cardview_light_background"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textMissao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <TextView
+        android:id="@+id/textTituloEmpresa"
+        android:layout_width="152dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="121dp"
+        android:text="ADMINISCAR"
+        android:textAlignment="center"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textTextoEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageLogo"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/textMissao"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="135dp"
+        android:text="MISSÃO;"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textTextoMissao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTextoEmpresa" />
+
+    <TextView
+        android:id="@+id/textTextoMissao"
+        android:layout_width="375dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="    Desenvolver sistemas cada vez mais inovadores, eficientes e seguros para atender todas as necessidades de negócio de nossos clientes."
+        android:textColor="@color/cardview_light_background"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textVisao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMissao" />
+
+    <TextView
+        android:id="@+id/textVisao"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="5dp"
+        android:text="VISÃO;"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texttextoVisao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTextoMissao" />
+
+    <TextView
+        android:id="@+id/texttextoVisao"
+        android:layout_width="375dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:text="    Um dia nos tornar uma empresa referência no mercado de desenvolvimento de sistemas e ser reconhecida como uma das empresas mais incríveis e inovadoras da área da tecnologia."
+        android:textColor="@color/cardview_light_background"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textValores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVisao" />
+
+    <TextView
+        android:id="@+id/textValores"
+        android:layout_width="109dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="142dp"
+        android:text="VALORES;"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textTextoValores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttextoVisao" />
+
+    <TextView
+        android:id="@+id/textTextoValores"
+        android:layout_width="374dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="11dp"
+        android:text="    Priorizamos a segurança e satisfação de nossos clientes, trabalhando sempre de maneira transparente, ágil, eficaz, ética. Em busca de resultados, inovação, com máxima qualidade e os melhores recursos tecnológicos em nossos sistemas."
+        android:textColor="@color/cardview_light_background"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textContato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textValores" />
+
+    <TextView
+        android:id="@+id/textContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="109dp"
+        android:text="CONTATO/REDES SOCIAIS:"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textTextoContato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTextoValores" />
+
+    <TextView
+        android:id="@+id/textTextoContato"
+        android:layout_width="377dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="9dp"
+        android:text="CNPJ: 77.041.563/0001-52 Telefone de Contato:  +55 (11) 2790-9893 Site: http://www.sysmade.epizy.com/ Instagram: systemmade https://www.instagram.com/systemmade/. Facebook: @SystemMadee https://www.facebook.com/SystemMadee. LinkedIn: Sys Made https://www.linkedin.com/in/sys-made-a075301a8/ E-mail: systemadeoficial@gmail.com Nosso 1° Cliente:  Adminiscar (Pedido: locadora/aluguel de veículos)"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textContato" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="387dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="11dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTextoContato"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="391dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,79 +3,146 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dialogplus_card_shadow"
+    android:background="@drawable/fundo_beauty_full"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewAlterarProduto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/imagem_circular"
+        android:gravity="center"
+        android:text="ALTERAR PRODUTO?"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="197dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/edit_alter_imagem_produto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Imagem URL"
-            android:textAlignment="center" />
+        <LinearLayout
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_light"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edit_alter_modelo_produto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Modelo"
-            android:textAlignment="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="IMAGEM URL:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_alter_cat_produto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Categoria"
-            android:textAlignment="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="MODELO:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_alter_diaria_produto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Diaria"
-            android:textAlignment="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="CATEGORIA:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_alter_qtd_dias_produto"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Qtd_dias"
-            android:textAlignment="center"
-            android:visibility="invisible" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="DIÁRIA:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edit_alter_pagamento_produto"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Pagamento"
-            android:textAlignment="center"
-            android:visibility="invisible" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_alter_vl_total_produto"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Valor total"
-            android:textAlignment="center"
-            android:visibility="invisible" />
+            android:layout_height="197dp"
+            android:background="@color/dialogplus_card_shadow"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_alter_imagem_produto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Imagem URL"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_alter_modelo_produto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Modelo"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_alter_cat_produto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Categoria"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_alter_diaria_produto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Diaria"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_alter_qtd_dias_produto"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Qtd_dias"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_alter_pagamento_produto"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Pagamento"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_alter_vl_total_produto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Valor total"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -92,10 +159,12 @@
             android:layout_marginTop="11dp"
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="431dp"
-            android:background="@drawable/button_beauty_full"
+            android:background="@drawable/imagem_circular"
             android:text="ALTERAR"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="34sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>
